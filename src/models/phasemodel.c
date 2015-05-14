@@ -20,7 +20,7 @@ ProteinIntronList * read_ProteinIntronList(FILE * ifp)
     if( line[0] == '#' ) {
       continue;
     }
-    if( !isnumber(line[0]) ) {
+    if( !isdigit(line[0]) ) {
       warn("Bad looking line in intron file, %s",line);
       continue;
     }
